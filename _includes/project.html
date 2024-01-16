@@ -1,0 +1,73 @@
+
+<div class="project-details">
+    <div class="project-button-container-left">
+        <a href="/" ><div class="project-button-back-left-upper"> <i class="fa-solid fa-house"></i> </div></a>
+        <a href="{{ page.url_left }}" ><div class="project-button-back-left-lower"> <i class="fa-solid fa-arrow-left"></i> </div></a>
+    </div>
+    <div class="project-header">
+        <div class="project-header-left">
+            <a href="/" > <i class="fa-solid fa-house"></i>  /  langeeri´s portfolio </a>
+            <h1>{{page.project_name}}</h1>
+            <p> {{page.header_caption}}</p>
+        </div>
+        <div class="project-header-right">
+            <div class="slider">
+                <div class="slider-wrapper">
+                    <!-- Slider images -->
+                    {% for image in page.images %}
+                    <img src="{{ image }}" class="slide" alt="Project Image">
+                    {% endfor %}
+                </div>
+                <!-- Slider Arrows -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+    <!-- Project Info Section -->
+    <div class="project-info">
+        <div class="project-overview-container">
+            <h2> Basic Info </h2>
+            <p> Build at: </p>
+            <p><a href="{{ page.build_at_url }}">{{ page.build_at }}</a></p>
+            <p> My role:</p>
+            <p> {{ page.role }} </p>
+            <p> My responsibilities: </p>
+            <p> {{ page.responsibilities }} </p>
+        </div>
+        <div class="project-overview-container">
+            <h2> Technical details </h2>
+            <p> {{ page.technical_detail_1 }}: </p>
+            <p> {{ page.detail_1 }} </p>
+            <p> {{ page.technical_detail_2 }}: </p>
+            <p> {{ page.detail_2 }} </p>
+            <p> {{ page.technical_detail_3 }}: </p>
+            <p> {{ page.detail_3 }} {% if page.detail_link %}<a href="{{ page.detail_link }}"> - click to check the repo </a> {% endif %}</p>
+            <p> {{ page.technical_detail_4 }}: </p>
+            <p> {{ page.detail_4 }} </p>
+            <p> {{ page.technical_detail_5 }}: </p>
+            <p> {{ page.detail_5 }} </p>
+        </div>
+        <div class="project-text-container">
+            <h2> {{ page.long_text_header }} </h2>
+            <p> {{ page.long_text }} </p>
+        </div>
+        <div class="project-text-container">
+            {% if page.features %}
+            <h2> {{ page.features_caption}} </h2>
+            {% for feature in page.features %}
+                <p> {{ feature }} </p>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+    <div class="project-tech-stack">
+        {% for icon in page.tech_stack %}
+        <i class="{{ icon }}"></i>
+        {% endfor %}
+    </div>
+    <div class="project-button-container-right">
+        <a href="{{ page.url_right }}" ><div class="project-button-back-right"> <i class="fa-solid fa-arrow-right"></i> </div></a>
+    </div>
+</div>
+ 

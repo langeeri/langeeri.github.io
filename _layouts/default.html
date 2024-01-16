@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	{% include head.html %}
+	<body>
+		{% include header.html %}
+		<section id="about">{% include about.html %}</section>
+		<section id="projects">{% include projects.html %}</section>
+		{% include footer.html %}
+		<!-- Modal -->
+		<div id="blogModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>Coming soon!</p>
+			</div>
+			</div>
+	</body>
+	<script src="/assets/js/main.js"></script>
+	<script src="/assets/js/modal.js"></script>
+</html>
