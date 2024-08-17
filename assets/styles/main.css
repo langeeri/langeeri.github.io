@@ -23,6 +23,7 @@ ol {
 
 a {
 	text-decoration: none;
+	color: #d6dce1;
 }
 
 /* ------------------------------------------------------------------- 
@@ -62,8 +63,8 @@ body {
 .header {
 	text-align: center;
 	min-height: 45vh;
-	width: 100%;
-	padding-top: 1%;
+	padding-top: 10%;
+	margin-bottom: 5%;
 }
 
 .header-links {
@@ -89,15 +90,18 @@ body {
 
 .header-intro {
 	display: grid;
-	grid-template-columns: 0.9fr 1fr;
-	gap: 3%;
+	grid-template-columns: 0.3fr 0.7fr;
+	margin-inline:20%
 }
 
 .header-intro img {
-	height: 70%;
+	justify-self: right;
+	height: auto;
+	width:65%;
 	filter: grayscale(100%);
 	border-radius: 10%;
 	border: 1px solid #333;
+	margin-right: 15%;
 }
 
 .header-intro img:hover {
@@ -115,12 +119,28 @@ body {
 	justify-content: left;
 	align-items: center;
 	text-align: center;
-	margin-top: 8%;
-	margin-bottom: 8%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.header-right h2{
+	font-size: 30px;
+}
+
+.header-right p{
+	font-size: 16px;
+	margin-inline:2%;
 }
 
 .site-title {
-	font-size: 80px;
+	font-size: 50px;
+}
+
+.header-icons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	font-size: 20px !important;
+	margin-top: 1%;
 }
 
 .link {
@@ -130,12 +150,7 @@ body {
 	color: #d6dce1;
 }
 
-.header-icons {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	font-size: 40px;
-	margin-inline: 20%;
-}
+
 
 @media screen and (max-width: 1285px) {
 
@@ -214,8 +229,8 @@ body {
 .close {
 	color: #aaa;
 	position: absolute;
-	top: 31%;
-	right: 26%;
+	top: 35%;
+	right: 27%;
 	font-size: 28px;
 	font-weight: bold;
 }
@@ -243,13 +258,13 @@ body {
  * ------------------------------------------------------------------- */
 
 #about {
-	margin-inline: 15%;
+	margin-inline: 20%;
 }
 
 .hero-cards {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 2%;
+	gap: 20px 20px;
 	margin-bottom: 7%;
 }
 
@@ -513,7 +528,6 @@ body {
 	grid-template-rows: auto;
 	gap: 5px;
 	color: #bfc5c9;
-	font-size: 16px;
 	text-decoration: none;
 }
 

@@ -2,9 +2,9 @@
 layout: project
 permalink: /datasheets/
 
-project_name: Datasheets App
+project_name: Datasheets
 
-header_caption: For the past two years, I have been working on Datasheets app designed to streamline the management of technical documentation. It comes with multilingual support and a full-featured CRUD management system, enabling flexible handling of product data in the database. Key functionalities include various built-in modules, such as a ticket manager, user management system, and a documentation module. The latter allows for the real-time generation of PDFs for product datasheets.
+header_caption: Aplikace obsahuje vícejazyčnou podporu a na míru vyvinutý CRUD systém pro správu dat produktů v databázi. Klíčové funkce zahrnují různé integrované moduly, jako je správce tiketů, systém pro správu uživatelů a modul pro dokumentaci. Plně nahrazuje práci sazeče a grafika, snížila chybovost a zredukovala čas přípravy a vydávání dokumentace o 50 %.
 
 images: 
 - /assets/img/datasheets_login.png
@@ -17,32 +17,32 @@ url_right: /hil/
 
 build_at: Regulus
 build_at_url: https://www.regulus.cz
-role: Fullstack developer
-responsibilities: Database design, Backend, Frontend
+role: Fullstack vývojář
+responsibilities: Databázové schéma, backend, frontend
 
-technical_detail_1: Development status
-technical_detail_2: Repository status
+technical_detail_1: Verze
+technical_detail_2: Repozitář
 technical_detail_3: Framework
-technical_detail_4: Testing
-technical_detail_5: Version control
+technical_detail_4: Testování
+technical_detail_5: Verzovací systém
 
 detail_1: Beta
-detail_2: Private / Internal
+detail_2: Soukromý / Interní
 detail_3: Django
 detail_4: Unittest, Coverage
 detail_5: Mercurial
 
-long_text_header: Architecture 
-long_text: The app leverages the Model-View-Template (MVT) architecture. The backend is structured around Django models, defining the database schema and relationships. Views handle the business logic, processing user requests, and interacting with the models. The URL routing system maps specific URLs to corresponding views, ensuring a clean and organized structure. The user interface is rendered through Django's templating system. 
+long_text_header: Architektura
+long_text: Aplikace využívá architekturu Model-View-Template (MVT). Backend je strukturován Django modely, které definují databázové schéma. Pohledy zpracovávají uživatelské požadavky a komunikují s modely. Systém routování URL mapuje konkrétní URL na odpovídající pohledy. Uživatelské rozhraní se vykresluje prostřednictvím Django templating systému.
 
-features_caption: Main Features
+features_caption: Hlavní funkce
 features:
-- Comprehensive ORM for database interactions
-- Localization and Internationalization 
-- Authentication and Authorization system
-- Custom CRUD and Ticket manager
-- User and user groups managemet system
-- Complex image processing for PDFs using Reportlab library
+- Komplexní ORM pro interakce s databází
+- Lokalizace a internacionalizace
+- Systém autentifikace a autorizace
+- Vlastní CRUD a manažer tiketů
+- Systém správy uživatelů a uživatelských skupin
+- Real-time generování lokalizovaných PDF pomocí knihovny ReportLab
 
 tech_stack:
   - devicon-django-plain

@@ -4,7 +4,7 @@ permalink: /powerskin/
 
 project_name: Powerskin+
 
-header_caption: As part of the Powerskin+ project, I worked as a designer and PLC programmer for the experimental testing and monitoring of LaWin Glass. It is a small-scale system consisting of LaWin Glass, a storage tank, and an air heater (heat sink). The installation aims to conduct research on thermally active façades.
+header_caption: Na projektu Powerskin+ jsem se podílela jako programátor PLC pro experimentální testování a monitorování systému s LaWin skly. Jedná se o malý experimentální systém složený z LaWin skel, akumulační nádrže a ohřívače vzduchu. Cílem instalace je výzkum tepelně aktivních fasád.
 
 images: 
 - /assets/img/flachglass.png
@@ -14,25 +14,25 @@ images:
 url_left: /heatdock/
 url_right: /type201/
 
-build_at: CTU UCEEB
+build_at: ČVUT UCEEB
 build_at_url: https://www.uceeb.cz
-role: Developer
-responsibilities: Design, Programming
+role: Vývojář
+responsibilities: Vývoj, programování
 
-technical_detail_1: Location
-technical_detail_2: Development status
-technical_detail_3: Repository status
-technical_detail_4: PLC vendor
-technical_detail_5: Version control
+technical_detail_1: Místo
+technical_detail_2: Stav
+technical_detail_3: Repozitář
+technical_detail_4: Výrobce PLC
+technical_detail_5: Verzovací systém
 
 detail_1: Flachglas Sülzfeld GmbH, Sülzfeld, Germany (Thüringen)
-detail_2: Trial testing
-detail_3: Private / Internal
+detail_2: Běžný provoz
+detail_3: Soukromý / Interní
 detail_4: Tecomat
 detail_5: Git
 
-long_text_header: Design 
-long_text: The solar system consists of LaWin glass panes, a storage tank, and a Volcano air heater. The process fluid is monoethylene glycol. Circulation of the process fluid between the LaWin glass and the storage tank, and between the storage tank and the air heater, is ensured by a circulation pump. The system operates at notably low pressures and flow rates. The control setup includes the Tecomat PLC CP 2005, along with sub-modules IT-1604 and IB-1301 for temperature and flow rate sensing. These sub-modules are interconnected via the TCL2 bus to the PLC. For remote management and data handling, the PLC is permanently accessible online through the TecoRoute service.
+long_text_header: Popis
+long_text: Solární systém se skládá z prosklených panelů LaWin Glass, akumulační nádrže a ohřívače vzduchu Volcano. Pracovní tekutina je monoethylen glykol. Cirkulaci pracovní tekutiny mezi panely LaWin a akumulační nádrží, a mezi akumulační nádrží a ohřívačem zajišťují oběhová čerpadla Grundfos. Systém pracuje za velmi nízkých tlaků a průtoků. Systém je řízen PLC Tecomat CP 2005 spolu se submoduly IT-1604 a IB-1301 pro monitoring teploty a průtoku. Submoduly jsou propojeny přes sběrnici TCL2 s PLC. Pro vzdálené řízení a zpracování dat je PLC trvale přístupné online prostřednictvím služby TecoRoute
 
 features:
 
